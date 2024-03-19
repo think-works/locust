@@ -20,6 +20,7 @@ RUN pip install /build/
 
 FROM base
 COPY --from=builder /opt/venv /opt/venv
+COPY --from=webui-builder locust/webui/dist /opt/venv/lib/python3.11/site-packages/locust/webui/dist
 COPY --from=webui-builder locust/webui/dist locust/webui/dist
 ENV PATH="/opt/venv/bin:$PATH"
 # turn off python output buffering
