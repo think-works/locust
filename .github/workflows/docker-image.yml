@@ -92,9 +92,9 @@ jobs:
           context: .
           file: ./Dockerfile
           platforms: linux/amd64
-          push: false
-          load: true
-          tags: locustio/locust:latest
+          push: true
+#          load: true
+          tags: 10.0.1.106:5000/locustio/locust:latest
 
 #  docker_tagged:
 #    name: Tagged - Docker push to tag based on git tag. Also push 'latest' if on master
