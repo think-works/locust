@@ -26,7 +26,7 @@ export default function Navbar() {
               }}
               variant='h3'
             >
-              Locust
+              欣野性能测试平台
             </Typography>
           </Link>
           <Box sx={{ display: 'flex', columnGap: 6 }}>
