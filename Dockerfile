@@ -28,6 +28,7 @@ ENV PYTHONUNBUFFERED=1
 RUN useradd --create-home locust
 # ensure correct permissions
 RUN chown -R locust /opt/venv
+RUN pip3 install --no-cache-dir har2locust
 USER locust
 WORKDIR /home/locust
 EXPOSE 8089 5557
