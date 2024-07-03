@@ -52,7 +52,7 @@ export default function Auth({ authProviders, error, usernamePasswordCallback }:
             }}
             variant='h3'
           >
-            欣野性能测试平台
+            英拿性能测试平台
           </Typography>
         </Box>
         {usernamePasswordCallback && (
